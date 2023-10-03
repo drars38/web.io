@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+
+
+/* Поплавок четыре колонки бок о бок */
+.column {
+    padding: 0 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Удалите лишние левые и правые поля, из-за заполнения */
+.row {
+    display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 20px;
+  justify-content: flex-start;
+}
+
+/* Очистить поплавки после столбцов */
+
+/* Отзывчивые столбцы */
+@media screen {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+/* Стиль контейнера карточек */
+.card {
+    box-shadow: 0 4px 8px 0 rgba(194, 15, 15, 0.2);
+  padding: 0 10px;
+  text-align: center;
+  background-color: #f1f1f1;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%; 
+}
+</style>
+</head>
+<body>
+<h1>Резюме</h1>
+
+<p> Ф.И.О. Дробит Арсений Артемович (Arseniy . Drobit)</p>
+<p><b>Дата рождения:</b> 2004-05-21</p>
+<p><b>Моб. телефон:</b> 8-908-660-11-68</p>
+<p><b>E-mail:</b> drars3883@icloud.com</p>
+<p><b>Семейное положение:</b> холост</p>
+
+</p>
+
+<h2>Образование:</h2>
+
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <h3>Сентябрь/2011 – 2022</h3>
+      <p>МАОУ “Гимназия №8”</p>
+      <p>Профиль: класс с углубленным изучением физики, математики, информатики</p>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <h3>Сентябрь/2012-2022</h3>
+      <p>ДЮСШ по горным лыжам “Ангарская гора” г. Ангарск </p>
+      <p>Категория: I взрослый разряд</p>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <h3>Май/2021</h3>
+      <p>Международный экзамен по английскому языку на уровень B1</p>
+      <p>Сертификат носителя языка</p>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <h3>Сентябрь 2022 – Июль 2026</h3>
+      <p>Иркутский Национальный Исследовательский Технический Университет (ИРНИТУ)</p>
+      <p>Направление " Информационные системы и технологии"</p>
+      <p>  Неоконченное Высшее</p>
+    </div>
+  </div>
+  
+</div>
+
+
+<h2>Опыт работы:</h2>
+<div class="row">
+    <div class="column">
+      <div class="card">
+        <h3>Декабрь/ 2020</h3>
+        <p>ДЮСШ по горным лыжам “Ангарская гора” г. Ангарск </p>
+        <p>Должность: судья-контролер, постановщик трассы</p>
+      </div>
+    </div>
+  
+    <div class="column">
+      <div class="card">
+        <h3>Январь/ 2021</h3>
+        <p> ДЮСШ по горным лыжам “Гора Соболиная” г. Байкальск </p>
+        <p>Должность: судья-контролер, постановщик трассы, судья-хронометражист</p>
+      </div>
+    </div>
+    
+    <div class="column">
+      <div class="card">
+        <h3>Март/ 2021</h3>
+        <p>ДЮСШ по горным лыжам “Бобровый Лог” г. Красноярск </p>
+        <p>Должность: Технический делегат</p>
+      </div>
+    </div>
+    
+    <div class="column">
+      <div class="card">
+        <h3>Июль – август 2022</h3>
+        <p>ООО “СПЕЦСТРОЙСЕРВИС” г. Ангарск.</p>
+        <p>Должность: Разнорабочий.</p>
+      </div>
+    </div>
+  </div>
+
+
+
+</body>
+</html>
+
