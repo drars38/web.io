@@ -17,8 +17,6 @@
   justify-content: flex-start;
 }
 
-/* Очистить поплавки после столбцов */
-
 /* Отзывчивые столбцы */
 @media screen {
   .column {
