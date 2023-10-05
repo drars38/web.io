@@ -1,0 +1,44 @@
+
+
+
+
+/* Поплавок четыре колонки бок о бок */
+.column {
+    padding: 0 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Удалите лишние левые и правые поля, из-за заполнения */
+.row {
+    display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 20px;
+  justify-content: flex-start;
+}
+
+/* Очистить поплавки после столбцов */
+
+/* Отзывчивые столбцы */
+@media screen {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+/* Стиль контейнера карточек */
+.card {
+    box-shadow: 0 4px 8px 0 rgba(194, 15, 15, 0.2);
+  padding: 0 10px;
+  text-align: center;
+  background-color: #f1f1f1;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%; 
+}
+
+  
